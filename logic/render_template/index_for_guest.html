@@ -1,0 +1,38 @@
+{% block body %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eatery</title>
+    <link href="https://fonts.googleapis.com/css?family=Ledger&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='style.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav1">
+                <li><a href="/login">Войти</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <div class="container">
+            <nav>
+
+            </nav>
+            </div>
+        </div>
+    </header>
+{% endblock %}
+
+<center>
+<h2>Меню на сегодня</h2>
+<b></b>
+{% for dish in dishes %}
+        <p>
+            <b>{{ dish.title }}</b>
+        </p>
+        {% endfor %}
+    </center>

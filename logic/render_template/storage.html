@@ -1,0 +1,10 @@
+{% include "layout.html" %}
+<center>
+<h2>Продукты на складе</h2>
+<b></b>
+{% for product in products %}
+        <p>
+            <b>{{ product.name }}</b> {{ product.count }} кг
+        </p>
+        {% endfor %}
+    </center>

@@ -1,0 +1,41 @@
+{% block body %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eatery</title>
+    <link href="https://fonts.googleapis.com/css?family=Ledger&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='style.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav1">
+                <li><a href="/logout">Выйти</a></li>
+            </ul>
+        </nav>
+       <div class="header">
+            <div class="container">
+            <nav>
+                <ul class="nav2">
+                    <li style="float: left;"><a href="/">Меню</a></li>
+                    <li style="float: left;"><a href="/recipes">Рецепты</a></li>
+                    <li style="float: right;"><a href="/products">Продукты</a></li>
+                    <li style="float: left;"><a href="/storage">Склад</a></li>
+                    <li style="float: left;"><a href="/providers">Поставщики</a></li>
+                </ul>
+                <ul class="nav2">
+                    <li style="float: left;"><a href="/new_menu">Новое меню</a></li>
+                    <li style="float: left;"><a href="/new_recipe">Новый рецепт</a></li>
+                    <li style="float: right;"><a href="/new_product">Новый продукт</a></li>
+                    <li style="float: left;"><a href="/change_products_in_storage">Управление складом</a></li>
+                    <li style="float: left;"><a href="/new_provider">Добавить поставщика</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </header>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% include "layout.html" %}
+<center>
+<h2>Список поставщиков</h2>
+
+{% for provider in providers %}
+        <p>
+            <b> </b>
+            <b>{{ provider.name }}</b>  телефон: <b>{{ provider.phone }}</b> поставляет:
+            <ul>
+            {% for product in provider.products %}
+                <li><b>{{ product.name }}</b></li>
+                {% endfor %}
+            </ul>
+        </p>
+        <hr />
+        <hr />
+        {% endfor %}
+    </center>

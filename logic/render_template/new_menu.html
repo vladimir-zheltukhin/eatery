@@ -1,0 +1,11 @@
+{% include "layout.html" %}
+<h2>Выберите блюда</h2>
+<form method="POST" action="new_menu">
+{% for recipe in recipes %}
+        <p>
+            <input type="checkbox" id={{ recipe.id }} name="indexes" value={{ recipe.id }}>
+            <label for={{ recipe.id }}> {{ recipe.title }}</label>
+        </p>
+        {% endfor %}
+<button type="submit">Добавить</button>
+</form>

@@ -1,0 +1,351 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Ledger', sans-serif;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    /*background-color: transparent;*/
+    outline: none;
+}
+
+.background {
+ /* min-height: 100%;
+  min-width: 640px;*/
+  height: 722px;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+}
+
+header{
+
+}
+
+.header{
+    position:relative;
+    margin-top: 15px;
+    width: 100%;
+    height: 200px;
+    background: #1A1A1A;
+    display: flex;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.container{
+    margin:0 auto;
+    width: 960px;
+    position: relative;
+}
+
+.container-center{
+    position:relative;
+    margin:0 auto;
+    width: 580px;
+    text-align: center;
+}
+
+.nav1{
+    position: relative;
+    display: flex;
+    float: right;
+    margin-right: 270px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.nav2{
+    padding-top: 150px;
+    position: relative;
+    font-size: 26px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.nav1 li {
+  display: inline;
+}
+
+.nav1 a {
+    color:#A3A3A3;
+    padding: 0.75em;
+    text-decoration: none;
+    line-height: 1;
+    transition: color 0.2s ease;
+}
+
+.nav1 a:hover{
+    color: #fff;
+}
+
+.nav2{
+  display: flex;  
+  text-align: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;  
+}
+
+.nav2 li{
+  flex-grow: 1;
+  width: 50%;
+}
+
+.nav2 li a{
+  display: block;
+}
+
+.nav2 li a{
+  padding: 1.17rem 1.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav2 li a{
+  position: relative;
+  overflow: hidden;
+}
+
+.nav2 li a::before, 
+.nav2 li a::after{
+  content: "";
+  width: 0;
+  height: 8px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.nav2 li a::before{
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+.nav2 li a::after{
+  right: 50%;
+  transform: translateX(50%); 
+}
+
+.nav2 li a:hover::before, 
+.nav2 li a:hover::after{
+  width: 100%;
+  transition-duration: 0.5s;
+}
+.logo_img{
+    padding-top: 36px;
+}
+
+.form-control{
+    margin-top: 10px;
+    width: 580px;
+    height:50px;
+    background-color: #fff;
+    color: #C4C4C4;
+    font-size: 20px;
+    padding-left: 30px;
+    border-radius: 10px;
+    border: 2px solid #C4C4C4;
+}
+
+.form-control:focus{
+    border: 2px solid #C4C4C4;
+    transition: all .5s;
+}
+
+.form-control:not(:focus){
+    border: 2px solid #C4C4C4;
+    transition: all .5s;
+}
+
+.form-bt{
+    margin-top: 10px;
+    width: 260px;
+    height:50px;
+    background-color: #1A1A1A;
+    color: #fff;
+    font-size: 20px;
+    text-align:center;
+    border-radius: 10px;
+    border: 2px solid #C4C4C4;
+    transition: all .2s ease;
+}
+
+.form-bt:hover{
+    border: 2px solid #1A1A1A;
+    transition: all .2s ease;
+}
+
+.form-a{
+    text-decoration: none;
+    margin-top: 30px;
+    color:#fff;
+    font-size: 20px;
+    transition: color 0.2s ease;
+}
+
+.form-a:hover{
+    text-decoration: underline;
+    color:#C4C4C4;
+    transition: color 0.2s ease;
+}
+
+.filter{
+    margin-top: 445px;
+    padding-top: 60px;
+    height: 50px;
+    width: 100%;
+}
+
+.filter-l{
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+}
+
+.form-filter{
+    width: 255px;
+    height: 34px;
+    padding-left: 45px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 2px solid #1A1A1A;
+    -webkit-user-select: none;
+}
+
+.form-bt-f{
+    width: 300px;
+    height: 36px;
+    float: right;
+    background-color: #1A1A1A;
+    color: #fff;
+    font-size: 18px;
+    text-align:center;
+    border-radius: 10px;
+    border: none;
+}
+
+.search-img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: 9px;
+    margin-left: 15px;
+}
+
+.dropbtn {
+    width: 304px;
+    height: 36px;
+    background-color: #1A1A1A;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 20px;
+    text-align:center;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 304px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /*border: 1px solid #1A1A1A;*/
+  z-index: 1;
+}
+
+.dropdown-content label {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  -webkit-user-select: none;
+}
+
+.dropdown-content label:hover { background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1.5px solid #1A1A1A;
+  border-radius: 0.25em;
+  margin-right: 1em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+  background-color: #1A1A1A;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1.5px solid #1A1A1A;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+.custom-radio:checked+label::before {
+    border-color: #1A1A1A;
+    background-color: #1A1A1A;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }

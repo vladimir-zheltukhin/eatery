@@ -1,0 +1,10 @@
+{% include "layout.html" %}
+<center>
+<h2>Меню на сегодня</h2>
+<b></b>
+{% for dish in dishes %}
+        <p>
+            <b>{{ dish.title }}</b>
+        </p>
+        {% endfor %}
+    </center>

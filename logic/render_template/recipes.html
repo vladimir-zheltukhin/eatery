@@ -1,0 +1,18 @@
+{% include "layout.html" %}
+<center>
+    <h2>Все рецепты</h2>
+</center>
+{% for recipe in recipes %}
+        <p>
+            <center><h3>{{ recipe.title }}</h3></center>
+            <i>Ингридиенты: </i>
+            <ul>
+            {% for product in recipe.products %}
+                <li><b>{{ product.name }}</b></li>
+                {% endfor %}
+            </ul>
+            <i>Рецепт: </i>
+            {{ recipe.text }}
+            <hr />
+        </p>
+        {% endfor %}
